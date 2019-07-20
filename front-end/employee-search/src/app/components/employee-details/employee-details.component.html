@@ -1,0 +1,657 @@
+<div class="row">
+    <div class="col-md-12">
+      <div
+        style="width:150px;background-color:#f1f1f1;border:1px solid #999;border-radius:2px;padding:5px;">
+        <div style="padding-right:10px;padding-left:10px">
+          <a routerLink="/" style="text-decoration:none"><span
+              style="font-size:12px;font-family:Arial;font-weight:bold;color:#444;white-space:nowrap;display:block; text-align:center">Back
+              to Main Menu</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="">
+
+<div class="row" *ngIf="employee">
+
+  <div class="col-md-3">
+    <div class="text-center">
+      <img src="{{employee._source.Image_URL}}" style="margin-bottom: 20px" width="160" height="160" class="img-circle">
+      <h4 class="media-heading"> {{employee._source.Employee_Name}} </h4>
+      <!-- <h5 class="media-heading"> ({{employee._source.position}}) </h5>  -->
+    </div>
+    <hr>
+
+
+    <ul class="list-group">
+      <!-- Employee: {{employee._source.name}} {{employee._source.surname}} -->
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Name</strong></span>
+        {{employee._source.Employee_Name}}</li>
+      <!-- Job Position: {{employee._source.position}} -->
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Position </strong></span>
+        {{employee._source.Position}}
+      </li>
+      <!-- Company: {{employee._source.company}} -->
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Company </strong></span>
+        {{employee._source.Company}}
+      </li>
+
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Director </strong></span>
+        {{employee._source.MD}}
+      </li>
+
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Join Date </strong></span>
+        {{employee._source.Join_Date}}
+      </li>
+
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Email </strong></span>
+        {{employee._source.Email}}
+      </li>
+
+      <li style="font-size: 12px;" class="list-group-item text-right"><span style="font-size: 12px;"
+          class="pull-left"><strong class=""> Phone No </strong></span>
+        {{employee._source.Telephone}}
+      </li>
+
+
+
+    </ul>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class=""> Skills </strong></div>
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-md-12">
+            <span class="label label-success" style="margin: 2px;" *ngFor="let skill of employee._source.Skills"><a
+                routerLink="" style="color: white">{{skill}}</a></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class=""> Languages </strong></div>
+      <div class="panel-body">
+
+        <div class="row">
+          <div class="col-md-12">
+            <span class="label label-success" style="margin: 2px;" *ngFor="let lang of employee._source.Languages"><a
+                routerLink="" style="color: white">{{lang}}</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-md-9">
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class="">Assignment Planning</strong></div>
+      <div class="panel-body">
+
+        <section class="main-content">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div class="row">
+                <span style="font-size: 12px; margin-bottom: 10px; margin-left:15px;" class="pull-left"><strong>
+                    Current:</strong></span><br>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th style="width: 25%">Project</th>
+                      <th style="width: 25%">Role </th>
+                      <th style="width: 25%">Period </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.Current_Projects">
+                      <td id="indent">
+                        <span> {{c.Project_Name}} </span>
+                      </td>
+                      <td id="center">
+                        <span> {{employee._source.Project_Role}} </span>
+                      </td>
+
+                      <td id="center">
+                        <span> {{c.From}} to {{c.To}}</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="row">
+                <span style="font-size: 12px; margin-bottom: 10px; margin-left:15px;" class="pull-left"><strong>
+                    Next:</strong></span><br>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th id="center" style="width: 25%">Project</th>
+                      <th id="center" style="width: 25%">Role </th>
+                      <th id="center" style="width: 25%">Period </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.Next_Projects">
+                      <td id="indent">
+                        <span> {{c.Project_Name}} </span>
+                      </td>
+
+                      <td id="center">
+                        <!-- <span> {{c.role}} </span> -->
+                        <span>?</span>
+                      </td>
+
+                      <td id="center">
+                        <span> {{c.From}} - {{c.To}}</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class="">Working Experience (KBTG)</strong> <strong><span class="pull-right">
+            (past 5 years) <a href=""> See All</a> </span> </strong></div>
+      <div class="panel-body">
+
+        <section class="main-content">
+
+          <div class="row">
+
+            <div class="col-md-12">
+              <div class="row">
+                <span style="font-size: 12px; margin-bottom: 10px; margin-left:15px;" class="pull-left"><strong>
+                    Past:</strong></span><br>
+              </div>
+
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th id="center" style="width: 25%">Project</th>
+                      <th id="center" style="width: 25%">Role </th>
+                      <th id="center" style="width: 25%">Period </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.Past_Projects">
+                      <td id="indent">
+                        <span> {{c.Project_Name}} </span>
+                      </td>
+
+                      <td id="center">
+                        <!-- <span> {{c.role}} </span> -->
+                        <span>?</span>
+                      </td>
+
+                      <td id="center">
+                        <span> {{c.From}} - {{c.To}}</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- <div class="col-md-12">
+  
+                  <span style="font-size: 12px; margin-bottom: 10px" class="pull-left"><strong>
+                      Maintenance:</strong></span>
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th class="text-center" style="width: 50%">Application</th>
+                      <th class="text-center" style="width: 50%">Details </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.maintain">
+                      <td class="text-center">
+                        <span> {{c.name}}</span>
+                      </td>
+  
+                      <td class="text-center">
+                        <div *ngFor="let d of c.stat">
+                          <span> Year: {{d.year}}</span>
+                          <span> Day: {{d.day}}</span>
+                        </div>
+  
+                      </td>
+  
+                    </tr>
+                  </tbody>
+                </table>
+              </div> -->
+
+            <div class="col-md-12">
+
+              <!-- <span style="font-size: 12px; margin-bottom: 10px" class="pull-left"><strong>
+                      Dummy Data:</strong></span> -->
+              <table class="table table-hover table-bordered results">
+                <thead style="font-size: 12px;">
+                  <tr>
+                    <th class="text-center" style="width: 25%">Maintenance</th>
+                    <th class="text-center" style="width: 25%">2017 </th>
+                    <th class="text-center" style="width: 25%">2016 </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="indent">
+                      <span> Application 1</span>
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> Man-day</span>
+                      </div>
+
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> Man-day</span>
+                      </div>
+
+                    </td>
+
+                  </tr>
+
+                  <tr>
+                    <td id="indent">
+                      <span> Application 2</span>
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> Man-day</span>
+                      </div>
+
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> Man-day</span>
+                      </div>
+
+                    </td>
+
+                  </tr>
+
+                  <tr>
+                    <td id="indent">
+                      <span> SR</span>
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> #, MDs</span>
+                      </div>
+
+                    </td>
+
+                    <td id="center">
+                      <div>
+                        <span> #, MDs</span>
+                      </div>
+
+                    </td>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+
+          </div>
+
+        </section>
+
+      </div>
+    </div>
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong>Working Experience (Non KBTG)</strong></div>
+      <div class="panel-body">
+        <section class="main-content">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead style="font-size: 12px;">
+                    <tr>
+                      <th class="text-center">Period</th>
+                      <th class="text-center">Company </th>
+                      <th class="text-center">Address </th>
+                      <th class="text-center">Telephone</th>
+                      <th class="text-center">Last Salary</th>
+                      <th class="text-center">Resign Reason</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.experience">
+                      <td class="text-center">
+                        {{c.from}} - {{c.to}}
+                      </td>
+
+                      <td class="text-center">
+                        {{c.company}}
+                      </td>
+
+                      <td class="text-center">
+                        {{c.address}}
+                      </td>
+
+                      <td class="text-center">
+                        {{c.phone}}
+                      </td>
+
+                      <td class="text-center">
+                        {{c.salary}}
+                      </td>
+
+                      <td class="text-center">
+                        {{c.reason}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class="">Education (Qualification)</strong></div>
+      <div class="panel-body">
+        <section class="main-content">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+
+                      <th class="text-center">Degree Type </th>
+                      <th class="text-center">Faculty </th>
+                      <th class="text-center">Subject</th>
+
+
+                      <!-- <th class="text-center">From_Date</th> -->
+
+
+
+
+                      <th class="text-center">Institute</th>
+                      <th class="text-center">Qualification</th>
+
+                      <th class="text-center">GPA</th>
+                      <th class="text-center">Period</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.Education">
+
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.Degree_Type}}
+                      </td>
+
+
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.Faculty}}
+                      </td>
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.Subject}}
+                      </td>
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.Institute}}
+                      </td>
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.Qualification}}
+                      </td>
+
+
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.GPA}}
+                      </td>
+
+                      <td style="font-size: 12px;" class="text-center">
+                        {{c.From_Date}} - {{c.To_Date}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class="">Certificate</strong><strong><span class="pull-right"> (last 5
+            records) <a href=""> See All</a> </span> </strong></div>
+      <div class="panel-body">
+        <section class="main-content">
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th id="center">IsVerified</th>
+                      <th id="center">Certification Type</th>
+                      <th id="center">ID Number </th>
+                      <th id="center">Issue Date</th>
+                      <th id="center">Expiration Date</th>
+                      <th id="center">Issue Place</th>
+                      <th id="center">Remark</th>
+                      <th id="center">Verified Date/By</th>
+                      <th id="center">Verified By</th>
+                      <!-- <th>Filename</th>
+                            <th>Modified Date</th>
+                            <th>Modified By</th> -->
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.certificate">
+                      <td id="center">
+                        {{c.verified}}
+                      </td>
+
+                      <td id="center">
+                        {{c.ctype}}
+                      </td>
+
+                      <td id="center">
+                        {{c.id}}
+                      </td>
+
+                      <td id="center">
+                        {{c.issued}}
+                      </td>
+
+                      <td id="center">
+                        {{c.expired}}
+                      </td>
+
+                      <td id="center">
+                        {{c.place}}
+                      </td>
+
+                      <td id="center">
+                        {{c.remark}}
+                      </td>
+
+                      <td id="center">
+                        {{c.veri_date}}
+                      </td>
+
+                      <td id="center">
+                        {{c.veri_by}}
+                      </td>
+
+                      <!-- <td class="text-center">
+                                {{c.file}}
+                            </td>
+  
+                            <td class="text-center">
+                                {{c.mod_date}}
+                            </td>
+  
+                            <td class="text-center">
+                                {{c.mod_by}}
+                            </td> -->
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading"><strong class="">Training Experience</strong><strong><span class="pull-right">
+            (last
+            5 records) <a href=""> See All</a> </span> </strong></div>
+      <div class="panel-body">
+
+        <section class="main-content">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="table-responsive">
+                <table class="table table-hover table-bordered results">
+                  <thead>
+                    <tr>
+                      <th>Training Course</th>
+                      <th>Course Status</th>
+                      <th>First Training Date</th>
+                      <th>Year</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let c of employee._source.Training_Courses">
+                      <td id="indent">
+                        {{c.Training_Course}}
+                      </td>
+
+                      <td id="center">
+                        {{c.Course_Status}}
+                      </td>
+
+                      <td id="center">
+                        {{c.First_Training_Date}}
+                      </td>
+
+                      <td id="center">
+                        {{c.Year}}
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- <div class="panel panel-default">
+        <div class="panel-heading"><strong class="">Competency</strong></div>
+        <div class="panel-body">
+          <section class="main-content">
+  
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="col-md-3">
+                      <span class="pull-left"><strong class="">
+                          Languages:</strong></span>
+                    </div>
+  
+                    <div class="col-md-9" >
+                        <span *ngFor="let c of employee._source.lang"  class="label label-success" style="margin-right:5px;"> {{c}}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <br>
+  
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="col-md-3">
+                        <span class="pull-left"><strong class="">
+                            Skills:</strong></span>
+                      </div>
+    
+                      <div class="col-md-9" >
+                          <span *ngFor="let c of employee._source.skill"  class="label label-success" style="margin-right:5px;"> {{c}}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+  
+        </div>
+      </div> -->
+
+
+  </div>
+</div>
+
+<hr class="">
+<br>

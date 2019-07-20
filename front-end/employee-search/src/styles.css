@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+    margin-top: 20px;
+  }
+  
+.form-control::placeholder  {
+    color: rgb(54, 54, 54);
+    font-family: FontAwesome;
+}

@@ -1,0 +1,61 @@
+
+  <app-header></app-header>
+
+
+
+<div class="row" style="margin-bottom:20px;">
+  <div class="col-md-12">
+      <nav>
+          <ul class="nav nav-justified">
+            <li><a routerLink="/search/results/project">Project</a></li>
+            <li><a routerLink="/search/results/skill">Skill</a></li>
+            <li><a routerLink="">Certificate</a></li>
+            <li><a routerLink="">Education</a></li>
+          </ul>
+        </nav>
+  </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+      <span class="pull-left" >
+        <h4 style="margin-left:15px"> Search by name </h4>
+      </span>
+  
+      <div class="form-group pull-right">
+        <input type="text" class="search form-control" name="search" [(ngModel)]="searchText"
+          placeholder="&#61442; Search employee">
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="col-md-12">
+      <div class="table-responsive">
+          <table class="table table-hover table-bordered results">
+            <thead style="font-size: 12px;">
+              <tr>
+                <th style="width: 25%; " class="text-center">Name</th>
+                <th style="width: 25%" class="text-center">Job Position</th>
+                <th style="width: 25%" class="text-center">Company</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let employee of employees | filter : searchText">
+                <td id="indent"><a
+                    routerLink="/employee/{{employee._source.Employee_ID}}">{{employee._source.Employee_Name}}</a></td>
+                <td id="indent">{{employee._source.Position}}</td>
+                <td id="indent">{{employee._source.Company}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div *ngIf="(employees | filter: searchText).length === 0">
+          <span style="margin-left:20px;">No matching elements</span> 
+        </div>
+  </div>
+</div>
+
+
+<hr>

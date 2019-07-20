@@ -1,0 +1,30 @@
+a.list-group-item {
+    height:auto;
+    min-height:220px;
+}
+a.list-group-item.active small {
+    color:#fff;
+}
+
+thead {
+    background-color: rgba(117, 117, 117, 0.993);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+}
+
+.mic-info { color: #242424;font-size: 11px; }
+.action { margin-bottom:5px; }
+
+th {
+    text-align: center;
+  }
+  
+td#center {
+    text-align: center;
+    font-size: 12px;
+} 
+  
+td#indent {
+    padding-left: 30px;
+    font-size: 12px;
+}

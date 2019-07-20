@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-md-12">
+      <div
+        style="width:150px;background-color:#f1f1f1;border:1px solid #999;border-radius:2px;padding:5px; margin-bottom:20px;">
+        <div style="padding-right:10px;padding-left:10px">
+          <a routerLink="/" style="text-decoration:none"><span
+              style="font-size:12px;font-family:Arial;font-weight:bold;color:#444;white-space:nowrap;display:block; text-align:center">Back
+              to Main Menu</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<app-header></app-header>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <span class="pull-left" >
+      <h4 style="margin-left:15px"> Search by project</h4>
+    </span>
+
+    <div class="form-group pull-right">
+      <input type="text" class="search form-control" (keyup)='search($event.target.value)'
+        placeholder="&#61442; Enter project name ">
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-xs table-hover table-bordered results">
+      <thead>
+        <tr>
+          <th style="width: 40%">Project</th>
+          <th style="width: 10%">Status</th>
+          <th style="width: 40%">People</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let proj of projects">
+          <td id="indent">{{proj._source.Project_Name}}</td>
+          <td id="center">{{proj._source.Status | titlecase}}</td>
+          <td id="indent">
+            <div *ngFor="let emp of proj._source.People">
+              <a routerLink="/employee/{{emp.Employee_ID}}">{{emp.Employee_Name}}</a>
+
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div *ngIf="projects.length === 0">
+        <span style="margin-left:20px;">No matching elements</span> 
+    </div>
+  </div>
+</div>
+
+
+
+
+<hr class="">
