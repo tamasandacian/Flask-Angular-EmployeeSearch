@@ -1,0 +1,77 @@
+[
+    {
+        "Skill": "Angular JS",
+        "People": [
+            {
+                "Employee_ID": 100011,
+                "Employee_Name": "William LaRotonda"
+            }
+        ]
+    },
+    {
+        "Skill": "R",
+        "People": [
+            {
+                "Employee_ID": 100004,
+                "Employee_Name": "Mia Brown"
+            },
+            {
+                "Employee_ID": 100070,
+                "Employee_Name": "Julia Zhou"
+            }
+        ]
+    },
+    {
+        "Skill": "Python",
+        "People": [
+            {
+                "Employee_ID": 100004,
+                "Employee_Name": "Mia Brown"
+            },
+            {
+                "Employee_ID": 100070,
+                "Employee_Name": "Julia Zhou"
+            }
+        ]
+    },
+    {
+        "Skill": "Spark",
+        "People": [
+            {
+                "Employee_ID": 110020,
+                "Employee_Name": "Estelle Howard"
+            }
+        ]
+    },
+    {
+        "Skill": "Python Flask Framework",
+        "People": [
+            {
+                "Employee_ID": 100011,
+                "Employee_Name": "William LaRotonda  "
+            }
+        ]
+    },
+    {
+        "Skill": "Hadoop",
+        "People": [
+            {
+                "Employee_ID": 100008,
+                "Employee_Name": "Jennifer Zamora"
+            },
+            {
+                "Employee_ID": 110020,
+                "Employee_Name": "Estelle Howard"
+            }
+        ]
+    },
+    {
+        "Skill": "DevOps",
+        "People": [
+            {
+                "Employee_ID": 100008,
+                "Employee_Name": "Jennifer Zamora"
+            }
+        ]
+    }
+]

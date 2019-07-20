@@ -1,0 +1,566 @@
+[
+    {
+        "Employee_ID": 100008,
+        "Employee_Name": "Jennifer Zamora",
+        "Company": "Data Analytics Consulting Co., Ltd.",
+        "MD": "Julia Zhou",
+        "Position": "Technology Academy Manager",
+        "Join_Date": "1/6/16",
+        "Telephone": 20000004,
+        "Email": "Jennifer.Zamora@dataanalytics.net",
+        "Image_URL": "https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg",
+        "Project_Role": "BA",
+        "Current_Projects": [
+            {
+                "Project_ID": "2016-000076",
+                "Project_Name": "Authentical",
+                "From": "Apr-19",
+                "To": "Dec-19"
+            }
+        ],
+        "Education": [
+            {
+                "Degree_Type": "Bachelor Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Bachelor of Science",
+                "Institute": "Brown University",
+                "Faculty": "Engineering",
+                "Subject": "Computer Engineering",
+                "GPA": 2.5
+            },
+            {
+                "Degree_Type": "Master Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Master of Arts",
+                "Institute": "Line Friennd University",
+                "Faculty": "Business Administration",
+                "Subject": "Organizational Psychology",
+                "GPA": 3.76
+            }
+        ],
+        "Training_Courses": [
+            {
+                "Training_Course": "The Power Within You",
+                "First_Training_Date": "16-Mar-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Innovation Through Design Thinking",
+                "First_Training_Date": "3-May-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Strategic Communication for Greater Success",
+                "First_Training_Date": "17-Aug-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Inspirational Leadership",
+                "First_Training_Date": "14-Sep-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            }
+        ],
+        "Skills": [
+            "Hadoop",
+            "DevOps"
+        ],
+        "Languages": [
+            "CN",
+            "EN"
+        ]
+    },
+    {
+        "Employee_ID": 110020,
+        "Employee_Name": "Estelle Howard",
+        "Company": "Data Analytics Consulting Co., Ltd.",
+        "MD": "Julia Zhou",
+        "Position": "Technology Academy Manager",
+        "Join_Date": "1/6/16",
+        "Telephone": 20000009,
+        "Email": "Estelle.Howard@dataanalytics.net",
+        "Image_URL": "https://www.siopsa.org.za/wp-content/uploads/2018/10/68824656-male-default-placeholder-avatar-profile-gray-picture-isolated-on-white-background-for-your-design-ve.jpg",
+        "Project_Role": "SE",
+        "Past_Projects": [
+            {
+                "Project_ID": "2015-000020",
+                "Project_Name": "CMS Project",
+                "From": "Jan-19",
+                "To": "Jan-19"
+            }
+        ],
+        "Current_Projects": [
+            {
+                "Project_ID": "2016-000006",
+                "Project_Name": "Integrated Lending",
+                "From": "Jan-19",
+                "To": "Dec-19"
+            }
+        ],
+        "Education": [
+            {
+                "Degree_Type": "Bachelor Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Bachelor of Science",
+                "Institute": "Brown University",
+                "Faculty": "Engineering",
+                "Subject": "Computer Engineering",
+                "GPA": 2.5
+            },
+            {
+                "Degree_Type": "Master Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Master of Arts",
+                "Institute": "Line Friend University",
+                "Faculty": "Business Administration",
+                "Subject": "Organizational Psychology",
+                "GPA": 3.75
+            }
+        ],
+        "Training_Courses": [
+            {
+                "Training_Course": "The Power Within You",
+                "First_Training_Date": "16-Mar-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Innovation Through Design Thinking",
+                "First_Training_Date": "3-May-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Product Manager's Survival Guide",
+                "First_Training_Date": "5-Jul-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Strategic Communication for Greater Success",
+                "First_Training_Date": "17-Aug-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Think on Your Feet",
+                "First_Training_Date": "20-Feb-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Digital Marketing for Business Transformation",
+                "First_Training_Date": "7-Aug-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Inspirational Leadership",
+                "First_Training_Date": "14-Sep-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            }
+        ],
+        "Skills": [
+            "Spark",
+            "Hadoop"
+        ],
+        "Languages": [
+            "CN",
+            "EN"
+        ]
+    },
+    {
+        "Employee_ID": 100011,
+        "Employee_Name": "William LaRotonda  ",
+        "Company": "Data Analytics Consulting Co., Ltd.",
+        "MD": "Julia Zhou",
+        "Position": "Senior Head-Technology Academy",
+        "Join_Date": "1/5/16",
+        "Telephone": 20000060,
+        "Email": "William.LaRotonda@dataanalytics.net",
+        "Image_URL": "https://www.siopsa.org.za/wp-content/uploads/2018/10/68824656-male-default-placeholder-avatar-profile-gray-picture-isolated-on-white-background-for-your-design-ve.jpg",
+        "Project_Role": "SD",
+        "Past_Projects": [
+            {
+                "Project_ID": "2013-000009",
+                "Project_Name": "Implement Support Sanction",
+                "From": "Mar-19",
+                "To": "May-19"
+            }
+        ],
+        "Current_Projects": [
+            {
+                "Project_ID": "2014-000031",
+                "Project_Name": "Interface app Enhancement",
+                "From": "Mar-19",
+                "To": "Jun-19"
+            },
+            {
+                "Project_ID": "2016-000076",
+                "Project_Name": "Authentication",
+                "From": "Mar-19",
+                "To": "Jun-19"
+            },
+            {
+                "Project_ID": "2013-000002",
+                "Project_Name": "Application Fraud Enhancement",
+                "From": "Jan-19",
+                "To": "Dec-19"
+            },
+            {
+                "Project_ID": "2014-000071",
+                "Project_Name": "ERM App Fraud",
+                "From": "Apr-19",
+                "To": "Jun-19"
+            }
+        ],
+        "Next_Projects": [
+            {
+                "Project_ID": "2013-000063",
+                "Project_Name": "FATCA & Risk Rating",
+                "From": "Jan-19",
+                "To": "Feb-19"
+            }
+        ],
+        "Education": [
+            {
+                "Degree_Type": "Bachelor Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Bachelor of Science",
+                "Institute": "Brown University",
+                "Faculty": "Engineering",
+                "Subject": "Computer Engineering",
+                "GPA": 2.5
+            },
+            {
+                "Degree_Type": "Master Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Master of Arts",
+                "Institute": "Line Friend University",
+                "Faculty": "Business Administration",
+                "Subject": "Organizational Psychology",
+                "GPA": 3.74
+            }
+        ],
+        "Training_Courses": [
+            {
+                "Training_Course": "The Power Within You",
+                "First_Training_Date": "16-Mar-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Product Manager's Survival Guide",
+                "First_Training_Date": "5-Jul-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Leader and Manager as Coach",
+                "First_Training_Date": "17-Oct-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Leadership Spirit",
+                "First_Training_Date": "10-Nov-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Knowledge Sharing: Cheque",
+                "First_Training_Date": "28-Jun-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Digital Marketing for Business Transformation",
+                "First_Training_Date": "7-Aug-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Inspirational Leadership",
+                "First_Training_Date": "14-Sep-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Coaching Clinic",
+                "First_Training_Date": "24-Oct-18",
+                "Year": 2018,
+                "Course_Status": "Next Course"
+            }
+        ],
+        "Skills": [
+            "Python Flask Framework",
+            "Angular JS"
+        ],
+        "Languages": [
+            "CN",
+            "EN"
+        ]
+    },
+    {
+        "Employee_ID": 100004,
+        "Employee_Name": "Mia Brown",
+        "Company": "Data Analytics Consulting Co., Ltd.",
+        "MD": "Maria Gonzalez",
+        "Position": "Technology Academy Supervisor",
+        "Join_Date": "4/1/16",
+        "Telephone": 20000001,
+        "Email": "Mia.Brown@dataanalytics.net",
+        "Image_URL": "https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg",
+        "Project_Role": "BA",
+        "Past_Projects": [
+            {
+                "Project_ID": "2013-000002",
+                "Project_Name": "Transaction Fraud project ",
+                "From": "Jan-19",
+                "To": "Apr-19"
+            },
+            {
+                "Project_ID": "2016-000055",
+                "Project_Name": "Issue Debit Card on Mobile Banking",
+                "From": "Jan-19",
+                "To": "Feb-19"
+            }
+        ],
+        "Current_Projects": [
+            {
+                "Project_ID": "2016-000068",
+                "Project_Name": "P2P non-bank",
+                "From": "Jan-19",
+                "To": "Aug-19"
+            },
+            {
+                "Project_ID": "2016-000030",
+                "Project_Name": "ANY ID",
+                "From": "Oct-19",
+                "To": "Dec-19"
+            },
+            {
+                "Project_ID": "2014-000014",
+                "Project_Name": "Chip card phase 2 - Issue co-badged debit card ",
+                "From": "Jan-19",
+                "To": "Dec-19"
+            },
+            {
+                "Project_ID": "2017-000010",
+                "Project_Name": " e-Tax Project",
+                "From": "Jan-19",
+                "To": "Aug-19"
+            }
+        ],
+        "Education": [
+            {
+                "Degree_Type": "Bachelor Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Bachelor of Science",
+                "Institute": "Brown University",
+                "Faculty": "Engineering",
+                "Subject": "Computer Engineering",
+                "GPA": 2.5
+            },
+            {
+                "Degree_Type": "Master Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Master of Arts",
+                "Institute": "Line Friend University",
+                "Faculty": "Business Administration",
+                "Subject": "Organizational Psychology",
+                "GPA": 3.73
+            }
+        ],
+        "Training_Courses": [
+            {
+                "Training_Course": "The Power Within You",
+                "First_Training_Date": "16-Mar-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Strategic Communication for Greater Success",
+                "First_Training_Date": "18-Aug-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Strengths Discovery",
+                "First_Training_Date": "4-May-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            }
+        ],
+        "Skills": [
+            "R",
+            "Python"
+        ],
+        "Languages": [
+            "CN",
+            "EN"
+        ]
+    },
+    {
+        "Employee_ID": 100070,
+        "Employee_Name": "Julia Zhou",
+        "Company": "Data Analytics Consulting Co., Ltd.",
+        "MD": "Linda Dolan",
+        "Position": "Senior Head-Technology Academy",
+        "Join_Date": "3/7/17",
+        "Telephone": 20000000,
+        "Email": "Julia.Zhou@dataanalytics.net",
+        "Image_URL": "https://t4.ftcdn.net/jpg/01/40/46/19/160_F_140461947_tWo9D0W8QQnrhzhCXJbDHIXblMV9BTZv.jpg",
+        "Project_Role": "SD",
+        "Past_Projects": [
+            {
+                "Project_ID": "2016-000039",
+                "Project_Name": "Credit Card Project",
+                "From": "Jan-19",
+                "To": "Apr-19"
+            },
+            {
+                "Project_ID": "2016-000055",
+                "Project_Name": "Debit Card on Mobile",
+                "From": "Jan-19",
+                "To": "Feb-19"
+            }
+        ],
+        "Current_Projects": [
+            {
+                "Project_ID": "2016-000006",
+                "Project_Name": "Profile Lending",
+                "From": "Jan-19",
+                "To": "Aug-19"
+            },
+            {
+                "Project_ID": "2016-000030",
+                "Project_Name": "ANY ID",
+                "From": "Jan-19",
+                "To": "Dec-19"
+            },
+            {
+                "Project_ID": "2014-000014",
+                "Project_Name": "Chip card ",
+                "From": "Jan-19",
+                "To": "Dec-19"
+            },
+            {
+                "Project_ID": "2017-000010",
+                "Project_Name": "e-Tax Project",
+                "From": "Jan-19",
+                "To": "Aug-19"
+            }
+        ],
+        "Education": [
+            {
+                "Degree_Type": "Bachelor Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Bachelor of Science",
+                "Institute": "Brown University",
+                "Faculty": "Engineering",
+                "Subject": "Computer Engineering",
+                "GPA": 2.5
+            },
+            {
+                "Degree_Type": "Master Degree 1",
+                "From_Date": "1/1/01",
+                "To_Date": "1/1/05",
+                "Qualification": "Master of Arts",
+                "Institute": "Line Friend University",
+                "Faculty": "Business Administration",
+                "Subject": "Organizational Psychology",
+                "GPA": 3.77
+            }
+        ],
+        "Training_Courses": [
+            {
+                "Training_Course": "New Joiner Boot Camp",
+                "First_Training_Date": "3-Jul-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Leader and Manager as Coach",
+                "First_Training_Date": "17-Oct-17",
+                "Year": 2017,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Knowledge Sharing: Treasury Product",
+                "First_Training_Date": "27-Apr-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Regulation",
+                "First_Training_Date": "20-Jun-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Knowledge Sharing: Cheque",
+                "First_Training_Date": "28-Jun-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Knowledge Sharing: Lending Product",
+                "First_Training_Date": "25-Jul-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Digital Marketing for Business Transformation",
+                "First_Training_Date": "7-Aug-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "ISO27001:2013 ISMS Intensive Training",
+                "First_Training_Date": "16-Aug-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Inspirational Leadership",
+                "First_Training_Date": "14-Sep-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Coaching Clinic",
+                "First_Training_Date": "2-Oct-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            },
+            {
+                "Training_Course": "Knowledge Sharing: Trade Finance",
+                "First_Training_Date": "27-Nov-18",
+                "Year": 2018,
+                "Course_Status": "Finished"
+            }
+        ],
+        "Skills": [
+            "Python",
+            "R"
+        ],
+        "Languages": [
+            "CN",
+            "EN"
+        ]
+    }
+]
