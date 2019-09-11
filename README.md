@@ -3,7 +3,6 @@ This project contains all the code necessary to reproduce Employee Search Applic
 
 This project was developed to help HR department find relevant employees matched by names, skills, projects, certificates, languages. The provided mock-up json data are found in '/back-end/mock-data' directory and replicates real-world human resource data composed of employee profiles, work experience, education, training records etc.
 
- Demo:
 ![employee_search2](https://user-images.githubusercontent.com/11573356/64728424-33977100-d4db-11e9-9483-dc62c762342e.gif)
 
 
